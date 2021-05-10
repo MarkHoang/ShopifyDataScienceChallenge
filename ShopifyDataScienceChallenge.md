@@ -31,13 +31,13 @@ Shippers.ShipperID = 1
 
 ## 2B
 
-SELECT TOP 1 * <br/>
+SELECT TOP 1 \* <br/>
 FROM ( <br/>
-	SELECT Employees.LastName, Count(*) <br/>
+	SELECT Employees.LastName, Count("*") <br/>
 	FROM Employees, Orders <br/>
 	WHERE Employees.EmployeeID = Orders.EmployeeID <br/>
 	GROUP BY Employees.LastName <br/>
-	Order by Count(*) Desc)  <br/>
+	Order by Count("*") Desc)  <br/>
 
 **SOLUTION: Peacock (40 orders)**
 
