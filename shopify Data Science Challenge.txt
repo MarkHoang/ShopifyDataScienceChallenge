@@ -1,4 +1,4 @@
-﻿##1A
+1A
 
 
 From observing the dataset and exploratory data analysis, each line refers to one order placed by a customer, which may include multiple pairs of shoes. 
