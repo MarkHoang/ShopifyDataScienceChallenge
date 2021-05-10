@@ -1,4 +1,4 @@
-##1A
+## 1A
 
 From observing the dataset and exploratory data analysis, each line refers to one order placed by a customer, which may include multiple pairs of shoes. 
 
@@ -10,26 +10,26 @@ However, this information could definitely be useful for Shopify’s internal an
 
 A better way to evaluate the data and give more segregated insights would be to calculate AOV per shop using the same Total Order Amount/ Orders but for each shop.
 
-##1B
+## 1B
 
-Aside from the AOV for each shop, a metric I would report from the dataset is the average shoe price across each shop. This could be used by individual shops as a measure to position their brand and perceived value to customers. 
+Aside from the AOV for each shop, a metric I would report from the dataset is the **average shoe price across all shops**. This could be used by individual shops as a measure to position their brand and perceived value to customers. 
 
-##1C
+## 1C
 Assuming order amounts do not take into account promotions and discounts,
 
-If we take into account the outlier (Shop 78) then the average shoe price would be: $407.99
-If we don’t take into account the outlier, then the average shoe price would be: $152.26
+If we take into account the outlier (Shop 78) then the average shoe price would be: **$407.99**
+If we don’t take into account the outlier, then the average shoe price would be: **$152.26**
 
-##2A
+## 2A
 
 SELECT COUNT (Orders.OrderID) AS 'Total Orders by Speedy Express' 
 FROM Shippers, Orders
 WHERE Shippers.ShipperID = Orders.ShipperID AND
 Shippers.ShipperID = 1
 
-SOLUTION: 54
-
-##2B
+**SOLUTION: 54
+**
+## 2B
 
 SELECT TOP 1 *
 FROM (
@@ -39,9 +39,9 @@ FROM (
 	GROUP BY Employees.LastName
 	Order by Count(*) Desc) 
 
-SOLUTION: Peacock (40 orders)
-
-##2C
+**SOLUTION: Peacock (40 orders)
+**
+## 2C
 
 SELECT TOP 1 *
 FROM (
@@ -54,7 +54,7 @@ FROM (
 	GROUP BY Products.ProductName
 	Order by Count(*) Desc) 
 
-SOLUTION: Gorgonzola Telino (ordered 5 times)
-
+**SOLUTION: Gorgonzola Telino (ordered 5 times)
+**
 
 I have always been excited about unique products advertised on instagram with a special personal meaning behind them. An example would be the bracelets that you can imprint a meaningful lat and Lon location onto as a way to make it uniquely yours. Human connection, community, and positivity are all values that I associate deeply with, and hence my store would sell a handmade message in a bottle with a letter inside that is handwritten by a different customer. These would be filtered for only wholesome messages and can be used as house decor with the unique twist that connects strangers together and makes the space a bit more soulful. 
