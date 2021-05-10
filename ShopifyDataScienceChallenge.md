@@ -22,10 +22,10 @@ If we don’t take into account the outlier, then the average shoe price would b
 
 ## 2A
 
-SELECT COUNT (Orders.OrderID) AS 'Total Orders by Speedy Express' 
-FROM Shippers, Orders
-WHERE Shippers.ShipperID = Orders.ShipperID AND
-Shippers.ShipperID = 1
+SELECT COUNT (Orders.OrderID) AS 'Total Orders by Speedy Express'  <br/>
+FROM Shippers, Orders <br/>
+WHERE Shippers.ShipperID = Orders.ShipperID AND <br/>
+Shippers.ShipperID = 1 <br/>
 
 **SOLUTION: 54**
 
@@ -33,7 +33,7 @@ Shippers.ShipperID = 1
 
 SELECT TOP 1 \* <br/>
 FROM ( <br/>
-	SELECT Employees.LastName, Count("*") <br/>
+	SELECT Employees.LastName, Count(\*) <br/>
 	FROM Employees, Orders <br/>
 	WHERE Employees.EmployeeID = Orders.EmployeeID <br/>
 	GROUP BY Employees.LastName <br/>
@@ -43,16 +43,16 @@ FROM ( <br/>
 
 ## 2C
 
-SELECT TOP 1 *
-FROM (
-	SELECT Products.ProductName, Count(*)
-	FROM Orders, OrderDetails, Customers, Products
-	WHERE Orders.OrderID = OrderDetails.OrderID AND
-    		Customers.Country = 'Germany' AND
-        		Products.ProductID = OrderDetails.ProductID AND
-        		Orders.CustomerID = Customers.CustomerID
-	GROUP BY Products.ProductName
-	Order by Count(*) Desc) 
+SELECT TOP 1 \*
+FROM ( <br/>
+	SELECT Products.ProductName, Count(\*) <br/>
+	FROM Orders, OrderDetails, Customers, Products <br/>
+	WHERE Orders.OrderID = OrderDetails.OrderID AND <br/>
+    		Customers.Country = 'Germany' AND <br/>
+        		Products.ProductID = OrderDetails.ProductID AND <br/>
+        		Orders.CustomerID = Customers.CustomerID <br/>
+	GROUP BY Products.ProductName <br/>
+	Order by Count(\*) Desc)  <br/>
 
 **SOLUTION: Gorgonzola Telino (ordered 5 times)**
 
