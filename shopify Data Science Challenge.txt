@@ -4,7 +4,7 @@
 From observing the dataset and exploratory data analysis, each line refers to one order placed by a customer, which may include multiple pairs of shoes. 
 
 
-Additionally, there seems to be an outlier for shop 78 as their 1 shoe order was priced at 25725 which would have skewed our calculation, assuming it is faulty data since 25725 is an unlikely price for a pair of shoes.
+Additionally, there seems to be an outlier for shop 78 as their shoes are priced at 25725 which would have skewed our calculation, assuming it is faulty data since 25725 is an unlikely price for a pair of shoes.
 
 
 It would appear that the AOV calculation currently is done as an aggregate for all sneaker shops taking total revenue divided by total number of orders (5000), which does not communicate much in terms of individual shops’ performance and would not be useful for actionable steps for each respective shop.
