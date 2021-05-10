@@ -55,5 +55,3 @@ FROM ( <br/>
 	Order by Count(\*) Desc)  <br/>
 
 **SOLUTION: Gorgonzola Telino (ordered 5 times)**
-
-I have always been excited about unique products advertised on instagram with a special personal meaning behind them. An example would be the bracelets that you can imprint a meaningful lat and Lon location onto as a way to make it uniquely yours. Human connection, community, and positivity are all values that I associate deeply with, and hence my store would sell a handmade message in a bottle with a letter inside that is handwritten by a different customer. These would be filtered for only wholesome messages and can be used as house decor with the unique twist that connects strangers together and makes the space a bit more soulful. 
